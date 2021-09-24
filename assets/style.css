@@ -1,0 +1,24 @@
+body{
+    background-color: #2A9D8F;
+}
+
+header{
+    padding: 50px;
+    display: flex;
+    background-color: #264653;
+}
+
+h1{
+    display: inline-block;
+}
+
+nav {
+    display: flex;
+}
+
+figure {
+    height: 160px;
+    width: 100%;
+    zoom: 190%;
+    background-image: url(https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA);
+}
