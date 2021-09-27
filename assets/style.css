@@ -1,3 +1,5 @@
+
+
 body{
     background-color: #2A9D8F;
 }
@@ -14,6 +16,8 @@ h1{
 
 nav {
     display: flex;
+    justify-content: space-around;
+    border: 3px solid red;
 }
 
 figure {
@@ -21,4 +25,36 @@ figure {
     width: 100%;
     zoom: 190%;
     background-image: url(https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA);
+}
+
+article,
+section,
+aside {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    border: 3px solid red;
+}
+
+header img{
+    width: 10%;
+}
+
+.about,
+.work,
+.contact {
+    padding: 80px;
+    border: 3px solid red;
+}
+
+.aboutDesc,
+.work2 {
+    padding: 80px;
+    border: 3px solid red;
+}
+
+.phone,
+.email {
+    padding: 80px;
+    border: 3px solid red;
 }
