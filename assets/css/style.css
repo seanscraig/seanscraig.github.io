@@ -29,10 +29,10 @@ p {
 }
 
 header {
-    padding: 15px 6% 15px 0;
+    padding: 5px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     background-color: var(--secondary);
@@ -41,14 +41,13 @@ header {
 
 header img{
     width: 10%;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
     box-shadow: 0 5px 35px var(--dark);
+    margin: 20px 20px 20px 20px;
 }
 
 header h1 {
     color: var(--light);
-    background-color: var(--secondary);
-    padding: 5px 1% 5px 6%;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
@@ -70,6 +69,8 @@ nav a {
     background-position: bottom;
     transition: all 0.25s ease-in;
 }
+
+
 
 nav a:hover {
 
@@ -119,11 +120,11 @@ nav a:last-child {
 .pageSection h2 {
     flex: 0 0 20%;
     text-align: right;
-    /* padding-right: 15%; */
     border-right: 4px solid var(--dark);
     font-size: 4vw;
     line-height: 1.1;
     margin-top: 50px;
+    padding-right: 20px;
 }
 
 .pageSection > div {
@@ -139,6 +140,7 @@ nav a:last-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 50px;
 }
 
 .flexItem {
@@ -180,8 +182,19 @@ nav a:last-child {
     flex-wrap: wrap;
     align-items: center;
     height: 100%;
+    margin-top: 50px;
 }
 
+/* nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--light) 0%, var(--light) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+} */
 .contact address a {
     display: inline-block;
 }
@@ -191,8 +204,12 @@ nav a:last-child {
 }
 
 /* load images */
+.refactor {
+    background-image: url(/portfolio/seanscraig.github.io/assets/images/Horiseon-Img.png);
+}
+
 .led {
-    background-image: url();
+    background-image: url(https://m.media-amazon.com/images/I/51IDg9CpXNL._AC_.jpg);
 }
 
 @media screen {
