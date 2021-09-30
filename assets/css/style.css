@@ -3,10 +3,6 @@
 }
 
 :root {
-  /* --primary: darkgray; */
-  /* --secondary: lightblue; */
-  /* --dark: black;
-  --light: white; */
   --primary: #0c1e2b;
   --secondary: #a6d4d5;
   --dark: black;
@@ -19,7 +15,6 @@ body {
   padding: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  /* color: var(--dark); */
   color: var(--light);
   line-height: 1.5;
 }
@@ -87,12 +82,10 @@ nav a:last-child {
 
 .hero {
   display: flex;
-  /* background-image: url(https://i.picsum.photos/id/866/536/354.jpg?hmac=tGofDTV7tl2rprappPzKFiZ9vDh5MKj39oa2D--gqhA); */
   background-image: url(../images/SeansRoadEdited.jpg);
   background-size: cover;
   background-position: center;
   min-height: 50vh;
-  /* min-height: 335px; */
   justify-content: flex-end;
   text-align: right;
   padding: 10px 10px;
@@ -201,9 +194,9 @@ nav a:last-child {
   background-position: bottom;
   transition: all 0.25s ease-in;
   color: var(--light);
-  font-size: 1.3rem;
+  font-size: 24px;
   font-style: normal;
-  margin: 0 0.2rem 0.1rem;
+  margin: 3rem 2.2rem 3.2rem;
 }
 
 .contact address a:hover {
@@ -217,8 +210,8 @@ nav a:last-child {
   background-image: url("../images/Horiseon-Img.png");
 }
 
-.led {
-  background-image: url(https://m.media-amazon.com/images/I/51IDg9CpXNL._AC_.jpg);
+.password {
+  background-image: url("../images/password-generator-image.png");
 }
 
 .calculator {
