@@ -206,24 +206,24 @@ nav a:last-child {
 }
 
 /* load images */
-.refactor {
-  background-image: url("../images/Horiseon-Img.png");
+.work1 {
+  background-image: url("../images/weather-dashboard.png");
 }
 
-.password {
-  background-image: url("../images/password-generator-image.png");
-}
-
-.code-quiz {
-  background-image: url("../images/code-quiz.png");
-}
-
-.day-planner {
+.work2 {
   background-image: url("../images/day-planner-img.png");
 }
 
-.buddy {
-  background-image: url(https://getrunbuddy.app/wp-content/uploads/2019/05/RunBuddyLogo.png);
+.work3 {
+  background-image: url("../images/code-quiz.png");
+}
+
+.work4 {
+  background-image: url("../images/password-generator-image.png");
+}
+
+.work5 {
+  background-image: url("../images/Horiseon-Img.png");
 }
 
 @media screen and (max-width: 768px) {
