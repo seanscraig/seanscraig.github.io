@@ -207,23 +207,23 @@ nav a:last-child {
 
 /* load images */
 .work1 {
-  background-image: url("../images/weather-dashboard.png");
+  background-image: url("../images/project-2-screen-shot.png");
 }
 
 .work2 {
-  background-image: url("../images/day-planner-img.png");
+  background-image: url("../images/tech-blog-screen-shot.png");
 }
 
 .work3 {
-  background-image: url("../images/code-quiz.png");
+  background-image: url("../images/note-taker-screen-shot.png");
 }
 
 .work4 {
-  background-image: url("../images/password-generator-image.png");
+  background-image: url("../images/project-1-screen-shot.png");
 }
 
 .work5 {
-  background-image: url("../images/Horiseon-Img.png");
+  background-image: url("../images/weather-dashboard.png");
 }
 
 @media screen and (max-width: 768px) {
