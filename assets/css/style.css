@@ -42,7 +42,7 @@ header {
 header img {
   width: 10%;
   border-radius: 100px;
-  box-shadow: 0 5px 35px var(--dark);
+  /* box-shadow: 0 5px 35px var(--dark); */
   margin: 20px;
 }
 
