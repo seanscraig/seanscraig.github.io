@@ -1,4 +1,4 @@
-import resume from "../assets/docs/SeanCraigResume.pdf";
+import resume from "../assets/docs/Sean-Craig-Resume.pdf";
 const Resume = () => {
   const frontEndSkills = [
     { id: 1, name: "HTML" },

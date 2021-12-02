@@ -4,12 +4,14 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
+        <div className="wrapper">
           <div className="content">
             <Switch>
               <Route exact path="/">
@@ -26,6 +28,8 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <Footer />
+        </div>
       </div>
     </Router>
   );
