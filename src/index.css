@@ -122,7 +122,6 @@ body {
 
 .portfolio {
   display: flex;
-  /* flex-direction: row; */
   flex-wrap: wrap;
 }
 
@@ -132,7 +131,6 @@ body {
 
 .portfolio img {
   width: 15%;
-  /* border-radius: 100px; */
   margin: 20px;
 }
 

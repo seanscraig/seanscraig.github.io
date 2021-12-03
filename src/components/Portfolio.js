@@ -49,7 +49,7 @@ const Portfolio = () => {
       <div className="portfolio">
         {portfolioItems.map((item) => (
           <a href={item.link}>
-            <div>
+            <div >
               <img src={item.image} alt="screenshot" />
               <h3>{item.title}</h3>
               <span>{item.tech}</span>
