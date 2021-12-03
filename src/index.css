@@ -14,6 +14,9 @@
 
 body {
   background-color: var(--primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
@@ -94,14 +97,17 @@ body {
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  color: black;
 }
 .contact button {
-  background: #f1356d;
+  background: var(--secondary);
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  margin: 20px;
+  width: 80%;
 }
 
 .thank-you {
@@ -134,8 +140,17 @@ body {
   background-color: var(--primary);
   display: flex;
   justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+  margin-top: auto;
 }
 
 .wrapper {
   background-color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar,
+  body {
+    flex-direction: column;
+  }
 }
