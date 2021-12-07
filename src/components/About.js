@@ -1,12 +1,13 @@
-import image from '../assets/images/IMG_0245-square.jpeg';
+import image from "../assets/images/IMG_0245-square.jpeg";
 
 const About = () => {
-
   return (
     <div className="about">
-      <h1>About</h1>
-      <img src={image} alt="Sean Craig"/>
-      <div>
+      <div className="about-label">
+        <img src={image} alt="Sean Craig" />
+      </div>
+      <div className="about-text">
+        <h1>About</h1>
         <p>
           Hello, I'm Sean, I am a full stack developer that is currently
           enrolled in the FullStack Web Development Certificate program at

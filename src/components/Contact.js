@@ -14,10 +14,6 @@ const Contact = () => {
     setTimeout(() => {
       setIsSubmitted(false);
     }, 8000);
-
-    console.log(
-      `${name} has submitted a message: ${message} from this email address: ${email}`
-    );
   };
 
   return (

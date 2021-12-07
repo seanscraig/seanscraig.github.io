@@ -69,10 +69,21 @@ body {
   /* background-color: red; */
 }
 
+.about-label{
+  /* width: 25%;
+  float: left; */
+}
+
 .about img {
   width: 25%;
+  height: auto;
   border-radius: 100px;
   margin: 20px;
+}
+
+.about-text{
+  /* width: 75%;
+  float: right; */
 }
 
 /* contact form */
@@ -130,8 +141,12 @@ body {
 }
 
 .portfolio img {
-  width: 15%;
+  width: 90%;
   margin: 20px;
+}
+
+.portfolio-item {
+  width:50%
 }
 
 .footer {

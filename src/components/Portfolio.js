@@ -48,13 +48,13 @@ const Portfolio = () => {
       <h1>Portfolio</h1>
       <div className="portfolio">
         {portfolioItems.map((item) => (
-          <a href={item.link}>
-            <div >
+          <div className="portfolio-item">
+            <a href={item.link}>
               <img src={item.image} alt="screenshot" />
               <h3>{item.title}</h3>
               <span>{item.tech}</span>
-            </div>
-          </a>
+            </a>
+          </div>
         ))}
       </div>
     </div>
