@@ -77,13 +77,13 @@ body {
 }
 .about-image{
   flex-basis: 100%;
-  padding: 20px 0px 0px 100px;
+  padding: 20px;
 }
 
 
 .about-text{
   font-size: 20px;
-  padding: 0px 80px 0px 50px;
+  padding: 20px;
 }
 
 /* contact form */
