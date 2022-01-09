@@ -3,14 +3,13 @@ import image from "../assets/images/IMG_0245-square.jpeg";
 const About = () => {
   return (
     <div className="about">
-      <div className="about-label">
+      <div className="about-image">
         <img src={image} alt="Sean Craig" />
       </div>
       <div className="about-text">
-        <h1>About</h1>
+        <h1>Hello!</h1>
         <p>
-          Hello, I'm Sean, I am a full stack developer that is currently
-          enrolled in the FullStack Web Development Certificate program at
+          I'm Sean, I am a full stack developer that recently completed the FullStack Web Development Certificate program at
           Northwestern. Here you can find a few web applications that I have
           made, you can also find the rest of my work on my github page.
         </p>

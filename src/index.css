@@ -66,24 +66,24 @@ body {
 
 /* about styles */
 .about {
-  /* background-color: red; */
-}
-
-.about-label{
-  /* width: 25%;
-  float: left; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about img {
-  width: 25%;
-  height: auto;
-  border-radius: 100px;
-  margin: 20px;
+  border-radius: 50%;
+  max-width: 100%;
+}
+.about-image{
+  flex-basis: 100%;
+  padding: 20px 0px 0px 100px;
 }
 
+
 .about-text{
-  /* width: 75%;
-  float: right; */
+  font-size: 20px;
+  padding: 0px 80px 0px 50px;
 }
 
 /* contact form */
@@ -162,8 +162,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar,
-  body {
+  .navbar, .about{
     flex-direction: column;
   }
 }
