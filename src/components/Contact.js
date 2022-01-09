@@ -1,16 +1,31 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
+
+const SERVICE_ID = "service_ic0tbwu";
+const TEMPLATE_ID = "template_3nhdwzb";
+const USER_ID = "user_MAEq0hApI1HbgioDYEoUt";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [user_name, setName] = useState("");
+  const [user_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setIsSubmitted(true);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+        setIsSubmitted(true);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    e.target.reset();
 
+    // setIsSubmitted(true);
     setTimeout(() => {
       setIsSubmitted(false);
     }, 8000);
@@ -30,15 +45,17 @@ const Contact = () => {
           <input
             type="text"
             required
-            value={name}
+            name="from_name"
+            value={user_name}
             placeholder="Name"
             onChange={(e) => setName(e.target.value)}
           />
           <label>Email</label>
           <input
-            type="text"
+            type="email"
             required
-            value={email}
+            name="from_email"
+            value={user_email}
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
           />
@@ -46,6 +63,7 @@ const Contact = () => {
           <textarea
             type="text"
             required
+            name="message"
             value={message}
             placeholder="Message"
             onChange={(e) => setMessage(e.target.value)}
