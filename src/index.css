@@ -75,13 +75,12 @@ body {
   border-radius: 50%;
   max-width: 100%;
 }
-.about-image{
+.about-image {
   flex-basis: 100%;
   padding: 20px;
 }
 
-
-.about-text{
+.about-text {
   font-size: 20px;
   padding: 20px;
 }
@@ -146,7 +145,7 @@ body {
 }
 
 .portfolio-item {
-  width:50%
+  width: 33%;
 }
 
 .footer {
@@ -162,7 +161,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar, .about{
+  .navbar,
+  .about {
     flex-direction: column;
+  }
+
+  .portfolio-item {
+    width: 100%;
   }
 }
