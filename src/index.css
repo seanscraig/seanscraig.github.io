@@ -144,7 +144,11 @@ body {
   margin: 20px;
 }
 
-.portfolio-item {
+.web-portfolio-item {
+  width: 33%;
+}
+
+.game-portfolio-item {
   width: 33%;
 }
 
