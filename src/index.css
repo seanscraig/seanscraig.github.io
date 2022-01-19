@@ -32,6 +32,10 @@ body {
   background-color: var(--primary);
 }
 
+.wrapper {
+  background-color: var(--primary);
+}
+
 /* navbar styles */
 .navbar {
   padding: 20px;
@@ -40,10 +44,6 @@ body {
   justify-content: space-between;
   background-color: var(--secondary);
 }
-
-/* .navbar h1 {
-  color: #f1356d;
-} */
 
 .navbar .links {
   display: flex;
@@ -64,7 +64,7 @@ body {
   border-bottom: 3px solid var(--light);
 }
 
-/* about styles */
+/* about */
 .about {
   display: flex;
   align-items: center;
@@ -130,6 +130,19 @@ body {
   flex-direction: column;
 }
 
+/* portfolio */
+.portfolio-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.portfolio-header button {
+  color: var(--light);
+  font-size: 20px;
+  background-color: var(--secondary);
+  margin-left: 20px;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +157,10 @@ body {
   margin: 20px;
 }
 
+.portfolio h3, span {
+  padding-left: 20px;
+}
+
 .web-portfolio-item {
   width: 33%;
 }
@@ -152,6 +169,7 @@ body {
   width: 33%;
 }
 
+/* footer */
 .footer {
   background-color: var(--primary);
   display: flex;
@@ -160,17 +178,14 @@ body {
   margin-top: auto;
 }
 
-.wrapper {
-  background-color: var(--primary);
-}
-
+/* media queries */
 @media screen and (max-width: 768px) {
   .navbar,
   .about {
     flex-direction: column;
   }
 
-  .portfolio-item {
+  .web-portfolio-item, .game-portfolio-item {
     width: 100%;
   }
 }

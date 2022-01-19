@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import webImage1 from "../assets/images/web/book-search-engine.png";
 import webImage2 from "../assets/images/web/pwa-budget-tracker.png";
 import webImage3 from "../assets/images/web/workout-tracker.png";
@@ -15,6 +17,8 @@ import gameImage4 from "../assets/images/games/home_forest_splash_screen.png";
 import gameImage5 from "../assets/images/games/lonely_virus2.png";
 
 const Portfolio = () => {
+  const [show, setShow] = useState(false);
+
   const webPortfolioItems = [
     {
       id: 1,
@@ -119,21 +123,38 @@ const Portfolio = () => {
     },
   ];
 
+  const handleChange = (e) => {
+    setShow(!show);
+  };
+
+  const isShowing = show;
+
   return (
     <div>
-      <h1>Portfolio</h1>
+      <div className="portfolio-header">
+        <h1>Portfolio</h1>
+        <button onClick={handleChange}>
+          {isShowing ? "Hide Games" : "Show Games"}
+        </button>
+      </div>
+
       <div className="portfolio">
+        {isShowing && (
+          <>
+            {gamesPortfolioItems.map((item) => (
+              <div className="game-portfolio-item">
+                <a href={item.link}>
+                  <img src={item.image} alt="screenshot" />
+                  <h3>{item.title}</h3>
+                  <span>{item.tech}</span>
+                </a>
+              </div>
+            ))}
+          </>
+        )}
+
         {webPortfolioItems.map((item) => (
           <div className="web-portfolio-item">
-            <a href={item.link}>
-              <img src={item.image} alt="screenshot" />
-              <h3>{item.title}</h3>
-              <span>{item.tech}</span>
-            </a>
-          </div>
-        ))}
-        {gamesPortfolioItems.map((item) => (
-          <div className="game-portfolio-item">
             <a href={item.link}>
               <img src={item.image} alt="screenshot" />
               <h3>{item.title}</h3>
